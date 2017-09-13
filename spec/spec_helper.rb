@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "az_clearance_card_verifier"
+require 'az_clearance_card_verifier/card'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
