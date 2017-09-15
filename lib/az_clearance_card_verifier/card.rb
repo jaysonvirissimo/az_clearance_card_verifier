@@ -5,10 +5,12 @@ class AzClearanceCardVerifier
     end
 
     def application_number
+      return unless attributes[:card_number]
       @application_number ||= attributes[:card_number].strip
     end
 
     def application_received
+      return unless attributes[:application_received]
       @application_received ||=
         Date.parse(attributes[:application_received].strip)
     end
@@ -36,7 +38,7 @@ class AzClearanceCardVerifier
     def type
       @type ||= attributes[:type].strip
     end
-    
+
     def valid?
       status.downcase.intern == :valid
     end
