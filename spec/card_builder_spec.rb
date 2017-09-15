@@ -20,6 +20,8 @@ RSpec.describe AzClearanceCardVerifier::CardBuilder do
     let(:example) do
       File.read(file_path + '/example_markup/not-found-example.html')
     end
+
+    xit 'returns an empty collection'
   end
 
   context 'when it is likely the schema has changed' do
