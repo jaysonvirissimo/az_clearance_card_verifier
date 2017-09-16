@@ -1,4 +1,5 @@
 require 'az_clearance_card_verifier/version'
+require 'az_clearance_card_verifier/card_builder'
 require 'httparty'
 
 class AzClearanceCardVerifier
