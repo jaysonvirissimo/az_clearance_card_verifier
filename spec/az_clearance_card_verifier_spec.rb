@@ -52,7 +52,7 @@ RSpec.describe AzClearanceCardVerifier do
       expect(instance).to receive(:response).and_return(response_double)
     end
 
-    xit 'is true'
+    it { expect(instance.any_valid?).to be(true) }
   end
 
   describe '#cards' do

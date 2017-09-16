@@ -11,6 +11,10 @@ class AzClearanceCardVerifier
     @card_number = card_number
   end
 
+  def any_valid?
+    cards.any?(&:valid?)
+  end
+
   def cards
     @cards ||= CardBuilder.new(response.body).build
   end

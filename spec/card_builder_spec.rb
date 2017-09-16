@@ -21,7 +21,12 @@ RSpec.describe AzClearanceCardVerifier::CardBuilder do
       File.read(file_path + '/example_markup/not-found-example.html')
     end
 
-    xit 'returns an empty collection'
+    describe 'returns an empty collection' do
+      let(:cards) { instance.build }
+
+      it { expect(cards).to be_a_kind_of(Array) }
+      it { expect(cards.length).to be_zero }
+    end
   end
 
   context 'when it is likely the schema has changed' do
