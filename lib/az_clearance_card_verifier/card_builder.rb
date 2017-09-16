@@ -1,4 +1,5 @@
 require 'nokogiri'
+require_relative 'card'
 
 class AzClearanceCardVerifier
   class CardBuilder
