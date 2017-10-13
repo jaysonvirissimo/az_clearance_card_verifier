@@ -1,5 +1,7 @@
 # AzClearanceCardVerifier
 
+[![Build Status](https://travis-ci.org/jaysonvirissimo/az_clearance_card_verifier.svg?branch=master)](https://travis-ci.org/jaysonvirissimo/az_clearance_card_verifier)
+
 This gem allows you to check the application status of an [AZ DPS](https://www.azdps.gov/) fingerprint clearance card.
 You'll need a fingerprint clearance card number or an application number.
 
